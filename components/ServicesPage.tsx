@@ -26,6 +26,11 @@ const stickerVisas: ServiceItem[] = [
   { title: "Uzbekistan Sticker Visit", description: "Visit Uzbekistan's Silk Road cities, architecture, and timeless traditions.", image: "/images/services/uzbekistan-sticker.png", rating: "4.5" },
 ];
 
+const stampVisas: ServiceItem[] = [
+  { title: "Nepal Stamp Visa", description: "Explore Nepal's Himalayan landscapes, heritage, and welcoming culture.", image: "/images/services/nepal.jpg", rating: "4.5" },
+  { title: "Lebanon Stamp Visa", description: "Discover Lebanon's Mediterranean coast, historic cities, and vibrant culture.", image: "/images/services/lebanon-red-theme.png", rating: "4.5" },
+];
+
 const eVisas: ServiceItem[] = [
   { title: "Azerbaijan E-Visa", description: "Azerbaijan's simple e-visa for hassle-free travel.", image: "/images/services/azerbaijan.jpg", rating: "4.2" },
   { title: "Malaysian E-Visa", description: "Effortless online visa process for Malaysian travelers.", image: "/images/services/malaysia-evisa.jpg", rating: "4.8" },
@@ -80,6 +85,7 @@ export default function ServicesPage() {
       <section className="services-hero"><Image src="/images/services/hero.jpg" alt="Maldives water bungalows" fill priority sizes="100vw" /><div className="services-hero-overlay" /><h1>Services</h1></section>
       <VisaSection title="Drop Box Visas Available" description="Secure your visa effortlessly with our drop box service. Fast, reliable, and convenient - making your travel plans smoother and more manageable." items={dropBoxVisas} columns={2} />
       <VisaSection className="sticker-visas" title="Sticker Visas Available" description="A captivating series unveiling the world's cultural gems, historical landmarks, and natural wonders. Explore diverse destinations and enrich your wanderlust with intriguing insights and captivating narratives." items={stickerVisas} />
+      <VisaSection className="stamp-visas" title="Stamp Visas Available" description="Explore our stamp visa options for memorable journeys, with reliable support from application to departure." items={stampVisas} columns={2} />
       <section className="services-cta"><Image src="/images/services/cta.jpg" alt="Prime destination" fill sizes="100vw" /><div className="services-cta-overlay" /><div className="shell services-cta-layout"><div><h2>Embark on Adventures in Our Prime Destinations</h2><p>Begin thrilling journeys in top-notch locations, creating unforgettable experiences and memories.</p><Link href="#evisas" className="button button-outline">Read More</Link></div><span className="service-play" aria-hidden="true" /></div></section>
       <div id="evisas"><VisaSection title="Evisas Available" description="Experience seamless travel with our e-visa services. Quick, convenient, and hassle-free - making your journey smoother from start to finish." items={eVisas} rows /></div>
       <section className="wide-service light"><div className="shell"><div className="wide-service-copy"><h2>Travel Insurance</h2><p>NZ TRAVEL &amp; TOURS best deal provide all countries Travel Insurance. Travel insurance is a type of insurance that provides cover for the cost of unexpected and unforeseen emergencies and incidents when you are travelling. It also connects travellers with an emergency assistance team that can provide advice and help arrange medical treatment and repatriation home.</p></div><ImageGallery images={insuranceSlides} title="Travel Insurance" /></div></section>
