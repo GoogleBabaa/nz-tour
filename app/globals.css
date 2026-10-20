@@ -304,9 +304,10 @@ footer { color: #333; background: var(--light); }
 @media (max-width: 767px) {
   .services-hero { min-height: 290px; }
   .services-hero h1 { font-size: 44px; }
+  .services-page h2 { width: 100%; font-size: 29px; line-height: 1.2; text-align: center; }
   .visa-section { padding: 50px 0; background-attachment: scroll; }
   .services-heading { margin-bottom: 28px; }
-  .services-heading h2 { font-size: 29px; }
+  .services-heading, .services-heading p { text-align: center; }
   .visa-grid, .visa-grid.columns-2 { grid-template-columns: 1fr; gap: 24px; }
   .visa-image, .columns-2 .visa-image { min-height: 230px; }
   .visa-content { min-height: auto; }
