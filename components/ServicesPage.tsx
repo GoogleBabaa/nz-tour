@@ -32,10 +32,10 @@ const eVisas: ServiceItem[] = [
   { title: "Iran E-Visa", description: "Azerbaijan's simple e-visa for hassle-free travel.", image: "/images/services/iran-evisa.jpg", rating: "4.2" },
   { title: "Singapore E-Visa", description: "Streamlined e-visa for hassle-free travel to Singapore.", image: "/images/services/singapore.png", rating: "4.8" },
   { title: "Indonesian E-Visa", description: "Simple e-visa process for Indonesian travelers.", image: "/images/services/indonesia.png", rating: "4.2" },
-  { title: "Cambodian E-Visa", description: "Convenient online visa for traveling to Cambodia.", image: "/images/services/cambodia.jpg", rating: "4.8" },
+  { title: "Thailand E-Visa", description: "Convenient online visa service for seamless travel to Thailand.", image: "/images/services/thailand.jpg", rating: "4.8" },
   { title: "Kenya E-Visa", description: "Effortless e-visa process for travel to Kenya.", image: "/images/services/egypt.jpg", rating: "4.2" },
   { title: "Sri Lanka E-Visa", description: "Streamlined e-visa for travel to Sri Lanka.", image: "/images/services/srilanka.jpg", rating: "4.8" },
-  { title: "Vietnam E-Visa", description: "Vietnam Land of culture, beauty, and adventure.", image: "/images/services/vietnam-evisa.jpg", rating: "4.2" },
+  { title: "Iraq E-Visa", description: "Simple e-visa service for convenient travel to Iraq.", image: "/images/services/iraq-sticker.png", rating: "4.2" },
 ];
 
 const insuranceSlides = ["/images/services/insurance-1.jpg", "/images/services/insurance-2.png", "/images/services/insurance-3.png", "/images/services/insurance-4.png"];
