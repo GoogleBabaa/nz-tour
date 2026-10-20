@@ -227,6 +227,14 @@ footer { color: #333; background: var(--light); }
 }
 
 /* Services page */
+.services-page h1,
+.services-page h2,
+.services-page h3,
+.services-page p { font-family: "Poppins", sans-serif; }
+.services-page h1,
+.services-page h2,
+.services-page h3 { font-weight: 600; }
+.services-page p { font-weight: 400; }
 .services-hero { position: relative; min-height: 286px; display: grid; place-items: center; overflow: hidden; }
 .services-hero > img { object-fit: cover; object-position: bottom center; }
 .services-hero-overlay { position: absolute; inset: 0; background: rgba(9, 25, 58, .64); }
