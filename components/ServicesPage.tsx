@@ -19,11 +19,11 @@ const dropBoxVisas: ServiceItem[] = [
 ];
 
 const stickerVisas: ServiceItem[] = [
-  { title: "Indonesian Sticker Visit", description: "Indonesian journey depicted in vibrant visit stickers.", image: "/images/services/indonesia.png", rating: "4.5" },
-  { title: "Nepal Sticker Visit", description: "Nepal's beauty showcased in stunning visit stickers.", image: "/images/services/nepal.jpg", rating: "4.5" },
-  { title: "Thailand Sticker Visit", description: "Explore Thailand with vibrant visit stickers.", image: "/images/services/thailand.jpg", rating: "4.7" },
-  { title: "Malaysia Sticker Visit", description: "Discover Malaysia through colorful visit stickers.", image: "/images/services/malaysia-evisa.jpg", rating: "4.7" },
-  { title: "Egypt Sticker Visit", description: "Explore Egypt's heritage with iconic visit stickers.", image: "/images/services/egypt.jpg", rating: "4.5" },
+  { title: "Morocco Sticker Visit", description: "Discover Morocco's historic cities, vibrant culture, and dramatic landscapes.", image: "/images/services/morocco-red-theme.png", rating: "4.5" },
+  { title: "Turkey Sticker Visit", description: "Explore Turkey's rich heritage, celebrated cuisine, and beautiful coastlines.", image: "/images/services/turkey-sticker.png", rating: "4.5" },
+  { title: "Indonesia Sticker Visit", description: "Discover Indonesia's islands, diverse culture, and tropical scenery.", image: "/images/services/indonesia.png", rating: "4.5" },
+  { title: "Bangladesh Sticker Visit", description: "Experience Bangladesh's river landscapes, heritage, and welcoming culture.", image: "/images/services/bangladesh-sticker.png", rating: "4.5" },
+  { title: "Uzbekistan Sticker Visit", description: "Visit Uzbekistan's Silk Road cities, architecture, and timeless traditions.", image: "/images/services/uzbekistan-sticker.png", rating: "4.5" },
 ];
 
 const eVisas: ServiceItem[] = [
