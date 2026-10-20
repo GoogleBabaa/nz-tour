@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.vercel/
+.chrome-mobile/
+.chrome-profile/
+*.log
+
+# Local visual comparison artifacts; deployed assets live under public/.
+/*.png
+/nz video.mp4
+/promoter.jpeg

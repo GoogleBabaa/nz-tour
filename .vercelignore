@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.chrome-mobile/
+.chrome-profile/
+*.log
+
+# Local visual comparison artifacts and duplicate source assets.
+/*.png
+/nz video.mp4
+/promoter.jpeg
