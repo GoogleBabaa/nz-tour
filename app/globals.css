@@ -304,7 +304,7 @@ footer { color: #333; background: var(--light); }
 @media (max-width: 767px) {
   .services-hero { min-height: 290px; }
   .services-hero h1 { font-size: 44px; }
-  .services-page h2 { width: 100%; font-size: 29px; line-height: 1.2; text-align: center; }
+  .services-page h2 { width: 100%; font-size: 34px; line-height: 1.2; text-align: center; }
   .visa-section { padding: 50px 0; background-attachment: scroll; }
   .services-heading { margin-bottom: 28px; }
   .services-heading, .services-heading p { text-align: center; }
@@ -313,10 +313,10 @@ footer { color: #333; background: var(--light); }
   .visa-content { min-height: auto; }
   .services-cta { min-height: 400px; }
   .services-cta-layout { grid-template-columns: 1fr; gap: 30px; }
-  .services-cta h2 { font-size: 29px; }
+  .services-cta h2 { font-size: 34px; }
   .service-play { justify-self: start; }
   .wide-service { padding: 50px 0; }
-  .wide-service-copy h2 { font-size: 29px; }
+  .wide-service-copy h2 { font-size: 34px; }
   .service-gallery { grid-template-columns: 1fr; }
   .gallery-frame { min-height: 250px; }
   .row-layout .visa-card { min-height: 0; grid-template-columns: 1fr; }
