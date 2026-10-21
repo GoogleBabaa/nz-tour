@@ -16,6 +16,7 @@ type ServiceItem = {
 const dropBoxVisas: ServiceItem[] = [
   { title: "Iran", description: "Ancient Persia, rich culture, political complexity, oil.", image: "/images/services/iran-evisa.jpg", rating: "4.5" },
   { title: "Vietnam", description: "Vietnam: vibrant culture, war history, scenic landscapes, pho.", image: "/images/services/vietnam.jpg", rating: "4.5" },
+  { title: "Lebanon", description: "Lebanon: Mediterranean coast, historic cities, and vibrant culture.", image: "/images/services/lebanon-red-theme.png", rating: "4.5" },
 ];
 
 const stickerVisas: ServiceItem[] = [
@@ -83,7 +84,7 @@ export default function ServicesPage() {
   return (
     <><Header active="services" /><main className="services-page">
       <section className="services-hero"><Image src="/images/services/hero.jpg" alt="Maldives water bungalows" fill priority sizes="100vw" /><div className="services-hero-overlay" /><h1>Services</h1></section>
-      <VisaSection title="Drop Box Visas Available" description="Secure your visa effortlessly with our drop box service. Fast, reliable, and convenient - making your travel plans smoother and more manageable." items={dropBoxVisas} columns={2} />
+      <VisaSection title="Drop Box Visas Available" description="Secure your visa effortlessly with our drop box service. Fast, reliable, and convenient - making your travel plans smoother and more manageable." items={dropBoxVisas} />
       <VisaSection className="sticker-visas" title="Sticker Visas Available" description="A captivating series unveiling the world's cultural gems, historical landmarks, and natural wonders. Explore diverse destinations and enrich your wanderlust with intriguing insights and captivating narratives." items={stickerVisas} />
       <VisaSection className="stamp-visas" title="Stamp Visas Available" description="Explore our stamp visa options for memorable journeys, with reliable support from application to departure." items={stampVisas} columns={2} />
       <section className="services-cta"><Image src="/images/services/cta.jpg" alt="Prime destination" fill sizes="100vw" /><div className="services-cta-overlay" /><div className="shell services-cta-layout"><div><h2>Embark on Adventures in Our Prime Destinations</h2><p>Begin thrilling journeys in top-notch locations, creating unforgettable experiences and memories.</p><Link href="#evisas" className="button button-outline">Read More</Link></div><span className="service-play" aria-hidden="true" /></div></section>
