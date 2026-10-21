@@ -3,6 +3,7 @@ node_modules/
 .vercel/
 .chrome-mobile/
 .chrome-profile/
+.chrome-audit-*/
 *.log
 
 # Local visual comparison artifacts; deployed assets live under public/.

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play, X } from "lucide-react";
 import { useState } from "react";
-import { Footer, Header } from "./HomePage";
+import { Footer, Header, WhatsAppButton } from "./HomePage";
 
 const workVisas = [
   { title: "Saudi Arabia Work Visa", description: "Work visa assistance for skilled, technical, construction, and service-sector opportunities.", image: "/images/employment/saudi-arabia.png", message: "Saudi Arabia" },
@@ -96,7 +96,7 @@ export default function EmploymentPage() {
         </section>
       </main>
       <Footer />
-      <a className="whatsapp" href="https://wa.me/923207660075" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">WA</a>
+      <WhatsAppButton />
 
       {videoOpen && (
         <div className="employment-video-modal" role="presentation" onMouseDown={() => setVideoOpen(false)}>
