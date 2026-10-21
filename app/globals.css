@@ -324,3 +324,66 @@ footer { color: #333; background: var(--light); }
   .row-layout .visa-content { padding: 25px 0 35px; }
   .booking-modal { padding: 30px 22px 24px; }
 }
+
+/* Overseas employment page */
+.employment-page h1,
+.employment-page h2,
+.employment-page h3,
+.employment-page p { font-family: "Poppins", sans-serif; }
+.employment-hero { position: relative; min-height: 430px; display: flex; align-items: center; overflow: hidden; color: white; }
+.employment-hero > img { object-fit: cover; object-position: center; }
+.employment-hero-overlay { position: absolute; inset: 0; background: rgba(10, 17, 30, .58); }
+.employment-hero-copy { position: relative; z-index: 1; padding-top: 55px; text-align: center; }
+.employment-hero-copy h1 { margin: 0 0 16px; color: white; font-size: 48px; line-height: 1.15; font-weight: 600; }
+.employment-hero-copy p { max-width: 760px; margin: 0 auto; font-size: 17px; line-height: 1.7; }
+.employment-opportunities { padding: 75px 0 85px; background: white; }
+.employment-heading { max-width: 850px; margin-bottom: 42px; text-align: center; }
+.employment-heading h2 { margin: 0 0 14px; color: var(--primary); font-size: 40px; line-height: 1.15; font-weight: 600; }
+.employment-heading p { margin: 0; color: #555; font-size: 15px; line-height: 1.7; }
+.employment-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.employment-card { min-width: 0; display: flex; flex-direction: column; overflow: hidden; border: 1px solid #ededed; border-radius: 8px; background: white; box-shadow: 0 12px 30px rgba(0, 0, 0, .07); }
+.employment-card-image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.employment-card-image img { object-fit: cover; }
+.employment-card-body { flex: 1; display: flex; flex-direction: column; padding: 24px; }
+.employment-card-body h3 { margin: 0 0 14px; color: var(--primary); font-size: 20px; line-height: 1.3; font-weight: 600; }
+.employment-card-body p { margin: 0 0 22px; color: #626262; font-size: 14px; line-height: 1.7; }
+.employment-card-body a { align-self: flex-start; min-height: 44px; display: inline-flex; align-items: center; gap: 12px; margin-top: auto; padding: 11px 18px; border-radius: 6px; color: white; background: #111; font-weight: 500; text-decoration: none; transition: background .2s ease; }
+.employment-card-body a:hover { background: var(--primary); }
+.employment-video-band { position: relative; min-height: 410px; display: flex; align-items: center; overflow: hidden; color: white; }
+.employment-video-band > img { object-fit: cover; }
+.employment-video-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(239, 0, 0, .96), rgba(239, 0, 0, .73) 50%, rgba(12, 18, 30, .72)); }
+.employment-video-layout { position: relative; z-index: 1; display: grid; grid-template-columns: 1.35fr .65fr; align-items: center; gap: 50px; }
+.employment-video-layout h2 { max-width: 760px; margin: 0 0 18px; color: white; font-size: 40px; line-height: 1.15; font-weight: 600; }
+.employment-video-layout p { max-width: 650px; margin: 0 0 25px; font-size: 15px; line-height: 1.7; }
+.employment-outline-button { min-height: 44px; display: inline-flex; align-items: center; padding: 10px 24px; border: 1px solid white; border-radius: 5px; color: white; text-decoration: none; font-weight: 600; }
+.employment-outline-button:hover { color: var(--primary); background: white; }
+.employment-play { justify-self: center; width: 76px; height: 76px; display: grid; place-items: center; border: 8px solid rgba(255, 255, 255, .28); border-radius: 50%; color: var(--primary); background: white; cursor: pointer; }
+.employment-achievements { padding: 75px 0 90px; background: #f7f7f7; }
+.achievement-layout { display: flex; justify-content: center; }
+.achievement-image { position: relative; width: min(820px, 100%); aspect-ratio: 16 / 10; overflow: hidden; border-radius: 8px; background: #ddd; box-shadow: 0 15px 35px rgba(0, 0, 0, .12); }
+.achievement-image img { object-fit: contain; background: white; }
+.employment-video-modal { position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(0, 0, 0, .84); }
+.employment-video-dialog { position: relative; width: min(960px, 100%); background: black; box-shadow: 0 25px 80px rgba(0, 0, 0, .5); }
+.employment-video-dialog > button { position: absolute; z-index: 2; top: 10px; right: 10px; width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; color: white; background: rgba(0, 0, 0, .72); cursor: pointer; }
+.employment-video-dialog video { width: 100%; max-height: 82vh; display: block; background: black; }
+
+@media (max-width: 1024px) {
+  .employment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 767px) {
+  .employment-hero { min-height: 380px; }
+  .employment-hero-copy { padding-top: 35px; }
+  .employment-hero-copy h1 { font-size: 38px; }
+  .employment-hero-copy p { font-size: 14px; }
+  .employment-opportunities, .employment-achievements { padding: 55px 0 65px; }
+  .employment-heading { margin-bottom: 30px; }
+  .employment-heading h2, .employment-video-layout h2 { width: 100%; font-size: 34px; line-height: 1.2; text-align: center; }
+  .employment-heading p, .employment-video-layout p { text-align: center; }
+  .employment-grid { grid-template-columns: 1fr; gap: 24px; }
+  .employment-card-body { padding: 22px 20px; }
+  .employment-video-band { min-height: 520px; }
+  .employment-video-layout { grid-template-columns: 1fr; justify-items: center; gap: 35px; text-align: center; }
+  .employment-play { justify-self: center; }
+  .achievement-image { aspect-ratio: 4 / 3; }
+}

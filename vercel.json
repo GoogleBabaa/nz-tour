@@ -8,6 +8,11 @@
       "source": "/services.html",
       "destination": "/services",
       "permanent": false
+    },
+    {
+      "source": "/nz-group.html",
+      "destination": "/nz-group",
+      "permanent": false
     }
   ]
 }
