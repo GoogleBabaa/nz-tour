@@ -24,8 +24,24 @@ const heroImages = ["/images/hero-1.jpg", "/images/hero-2.jpg", "/images/hero-3.
 const contactEmail = "nz_travel@hotmail.com";
 
 function openMailComposer(subject: string, lines: string[]) {
-  const query = new URLSearchParams({ subject, body: lines.join("\n") });
-  window.location.href = `mailto:${contactEmail}?${query.toString()}`;
+  const body = lines.join("\n");
+  const gmailQuery = new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to: contactEmail,
+    su: subject,
+    body,
+  });
+  const composer = window.open(`https://mail.google.com/mail/?${gmailQuery.toString()}`, "_blank");
+
+  if (composer) {
+    composer.opener = null;
+    window.alert("Email draft opened in Gmail. Please press Send to complete your message.");
+    return;
+  }
+
+  const mailQuery = new URLSearchParams({ subject, body });
+  window.location.href = `mailto:${contactEmail}?${mailQuery.toString()}`;
 }
 
 const testimonials = [
