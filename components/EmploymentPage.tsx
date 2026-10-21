@@ -14,6 +14,17 @@ const workVisas = [
   { title: "Malaysia Work Visa", description: "Work permit guidance for manufacturing, services, construction, and professional roles.", image: "/images/employment/malaysia.png", message: "Malaysia" },
 ];
 
+const achievements = [
+  { src: "/images/employment/promoter.jpeg", alt: "NZ Travel and Tours promoter achievement" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.31.16-PM.jpeg", alt: "NZ Travel and Tours achievement document 1" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.31.01-PM.jpeg", alt: "NZ Travel and Tours achievement document 2" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.30.47-PM.jpeg", alt: "NZ Travel and Tours achievement document 3" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.30.32-PM.jpeg", alt: "NZ Travel and Tours achievement document 4" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.30.14-PM.jpeg", alt: "NZ Travel and Tours achievement document 5" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.29.54-PM.jpeg", alt: "NZ Travel and Tours achievement document 6" },
+  { src: "/wordpress-media/2024/05/WhatsApp-Image-2024-05-18-at-6.29.36-PM.jpeg", alt: "NZ Travel and Tours achievement document 7" },
+];
+
 const whatsappLink = (country: string) =>
   `https://wa.me/923207660075?text=${encodeURIComponent(`Hi, I want information about a ${country} work visa.`)}`;
 
@@ -75,10 +86,12 @@ export default function EmploymentPage() {
           <div className="shell employment-heading">
             <h2>Achievements</h2>
           </div>
-          <div className="shell achievement-layout">
-            <div className="achievement-image">
-              <Image src="/images/employment/promoter.jpeg" alt="NZ Travel and Tours promoter achievement" fill sizes="(max-width: 767px) 100vw, 800px" />
-            </div>
+          <div className="shell achievement-carousel" aria-label="Achievement documents">
+            {achievements.map((achievement) => (
+              <figure className="achievement-image" key={achievement.src}>
+                <Image src={achievement.src} alt={achievement.alt} fill sizes="(max-width: 767px) 85vw, 360px" />
+              </figure>
+            ))}
           </div>
         </section>
       </main>

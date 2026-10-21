@@ -359,8 +359,8 @@ footer { color: #333; background: var(--light); }
 .employment-outline-button:hover { color: var(--primary); background: white; }
 .employment-play { justify-self: center; width: 76px; height: 76px; display: grid; place-items: center; border: 8px solid rgba(255, 255, 255, .28); border-radius: 50%; color: var(--primary); background: white; cursor: pointer; }
 .employment-achievements { padding: 75px 0 90px; background: #f7f7f7; }
-.achievement-layout { display: flex; justify-content: center; }
-.achievement-image { position: relative; width: min(820px, 100%); aspect-ratio: 16 / 10; overflow: hidden; border-radius: 8px; background: #ddd; box-shadow: 0 15px 35px rgba(0, 0, 0, .12); }
+.achievement-carousel { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 40px) / 3); gap: 20px; overflow-x: auto; overscroll-behavior-inline: contain; padding: 4px 4px 22px; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-color: var(--primary) #ddd; scrollbar-width: thin; }
+.achievement-image { position: relative; min-width: 0; aspect-ratio: 4 / 3; margin: 0; overflow: hidden; border-radius: 8px; background: white; box-shadow: 0 12px 30px rgba(0, 0, 0, .12); scroll-snap-align: start; }
 .achievement-image img { object-fit: contain; background: white; }
 .employment-video-modal { position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(0, 0, 0, .84); }
 .employment-video-dialog { position: relative; width: min(960px, 100%); background: black; box-shadow: 0 25px 80px rgba(0, 0, 0, .5); }
@@ -369,6 +369,7 @@ footer { color: #333; background: var(--light); }
 
 @media (max-width: 1024px) {
   .employment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .achievement-carousel { grid-auto-columns: calc((100% - 20px) / 2); }
 }
 
 @media (max-width: 767px) {
@@ -385,5 +386,6 @@ footer { color: #333; background: var(--light); }
   .employment-video-band { min-height: 520px; }
   .employment-video-layout { grid-template-columns: 1fr; justify-items: center; gap: 35px; text-align: center; }
   .employment-play { justify-self: center; }
+  .achievement-carousel { width: calc(100% - 20px); grid-auto-columns: 86%; gap: 16px; }
   .achievement-image { aspect-ratio: 4 / 3; }
 }
