@@ -5,8 +5,8 @@
   "installCommand": "npm install",
   "redirects": [
     {
-      "source": "/services",
-      "destination": "/services.html",
+      "source": "/services.html",
+      "destination": "/services",
       "permanent": false
     }
   ]

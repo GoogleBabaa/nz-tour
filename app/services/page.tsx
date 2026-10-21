@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import ServicesPage from "../../components/ServicesPage";
 
 export default function Page() {
-  redirect("/services.html");
+  return <ServicesPage />;
 }
